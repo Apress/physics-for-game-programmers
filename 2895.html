@@ -1,0 +1,356 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="Errata_April07_2006_files/filelist.xml">
+<title>Errata for ?Beginning C# Objects?</title>
+<!--[if gte mso 9]><xml>
+<o:DocumentProperties>
+  <o:Author>Grant Palmer</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Grant Palmer</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>164</o:TotalTime>
+  <o:Created>2006-04-07T23:08:00Z</o:Created>
+  <o:LastSaved>2006-04-07T23:08:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>203</o:Words>
+  <o:Characters>1158</o:Characters>
+  <o:Company> ELORET Corporation</o:Company>
+  <o:Lines>9</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1359</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+</o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+/* Font Definitions */
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:TheSansMonoConSemiLight;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:131 0 0 0 9 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-noshow:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.25in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.Code, li.Code, div.Code
+	{mso-style-name:Code;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:76.5pt;
+	margin-bottom:0in;
+	margin-left:9.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:8.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:TheSansMonoConSemiLight;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-no-proof:yes;}
+p.CodeFirst, li.CodeFirst, div.CodeFirst
+	{mso-style-name:"Code First";
+	mso-style-parent:Code;
+	mso-style-next:Code;
+	margin-top:0in;
+	margin-right:76.5pt;
+	margin-bottom:0in;
+	margin-left:9.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:8.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:TheSansMonoConSemiLight;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-no-proof:yes;}
+p.CodeLast, li.CodeLast, div.CodeLast
+	{mso-style-name:"Code Last";
+	mso-style-parent:Code;
+	mso-style-next:"Body Text";
+	margin-top:0in;
+	margin-right:76.5pt;
+	margin-bottom:0in;
+	margin-left:9.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:8.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:TheSansMonoConSemiLight;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-no-proof:yes;}
+p.CodeBold, li.CodeBold, div.CodeBold
+	{mso-style-name:"Code Bold";
+	mso-style-parent:Code;
+	margin-top:0in;
+	margin-right:76.5pt;
+	margin-bottom:0in;
+	margin-left:9.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:8.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:TheSansMonoConSemiLight;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	mso-no-proof:yes;}
+p.TableCaption, li.TableCaption, div.TableCaption
+	{mso-style-name:"Table Caption";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'>Errata for ?Beginning
+C# Objects?</p>
+
+<p class=MsoNormal align=center style='text-align:center'>April 7, 2006</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Note: The changes for each errata element are underlined.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>Chapter 1, page 44, bottom of page:<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The output from the code example is wrong. It should read as
+follows:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyText>This code?s output is shown here:</p>
+
+<p class=CodeFirst>Cheryl 0</p>
+
+<p class=Code>Cheryl 1</p>
+
+<p class=Code><u>Cheryl 3<o:p></o:p></u></p>
+
+<p class=CodeLast>What's next</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>Chapter 3, page 80, 2<sup>nd</sup> paragraph:<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The phrase ?they use Pascal casing? should read ?they use
+camel casing?</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyText>Names for (non-attribute) reference variables follow the
+same convention as method and attribute names: i.e., they use <u>camel</u>
+casing. Some sample reference variable declarations are as follows:</p>
+
+<p class=CodeFirst><span style='mso-spacerun:yes'>  </span>Student x;</p>
+
+<p class=Code><span style='mso-spacerun:yes'>  </span>Student aStudent;</p>
+
+<p class=Code><span style='mso-spacerun:yes'>  </span>Course
+prerequisiteOfThisCourse;</p>
+
+<p class=CodeLast><span style='mso-spacerun:yes'>  </span>Professor myAdvisor;</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>Chapter 3, page 85, bottom of page:<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The heading of table 3-3 should read ?Professor Class
+Attributes? rather than ?Student Class Attributes?.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=TableCaption><span class=GramE>Table 3-3.</span> <u>Professor</u>
+Class Attributes</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>Chapter 7, page 284, bottom 1/3 of page:<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The second line below the ?// Calling our own static method?
+should read ?temp1? rather than ?temp?</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=CodeBold>// Calling our own static method.</p>
+
+<p class=CodeBold>double temp2 = Temperature.FahrenheitToCentigrade(temp);</p>
+
+<p class=CodeLast>Console.WriteLine(&quot;&quot; + <u>temp1</u> + &quot;
+degrees F = &quot; + temp2 + &quot;degrees C&quot;);</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>Chapter 14, page 559, middle of page:<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The class name ?<span class=SpellE>Transcipt</span>? should
+read ?Transcript?</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=CodeFirst>Student s1 = new Student(&quot;Gerson Lopez&quot;,
+&quot;123456789&quot;);</p>
+
+<p class=Code><u><span lang=FR style='mso-ansi-language:FR'>Transcript</span></u><span
+lang=FR style='mso-ansi-language:FR'> t = new Transcript();<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
+
